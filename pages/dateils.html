@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="../css/dateils.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <h1><a href="../index.html">LOGO</a></h1>
+            </div>
+            <nav class="nav">
+                                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../index.html">Product</a></li>
+                    <li><a href="../index.html">Card</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-theme">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="main__details" id="details">
+        <!-- Dynamic content will be injected here -->
+    </main>
+
+    <script src="../js/dateils.js" type="module"></script>
+    <script>
+        document.getElementById('toggle-theme').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
